@@ -1,0 +1,208 @@
+@media only screen and (min-width: 1020px) {
+  header {
+    padding: 0rem 3rem;
+  }
+  header h1 {
+    font-size: 2rem;
+    white-space: nowrap;
+  }
+  header nav ul {
+    width: -moz-fit-content;
+    width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    position: static;
+    flex-direction: row;
+    background: transparent;
+  }
+  header nav ul a {
+    position: relative;
+    font-size: 1.1rem;
+    white-space: nowrap;
+  }
+  header nav ul a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 2px;
+    bottom: -5px;
+    right: 0;
+    background: #8073FF;
+    border-radius: 5px;
+    transition: 0.2s all ease;
+  }
+  header nav ul a:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  header nav .bars {
+    display: none;
+  }
+  section {
+    height: calc(100% - 60px);
+    padding: 2rem 4rem;
+  }
+  section .title {
+    font-size: 2rem;
+    padding: 2rem 0;
+  }
+  section .container {
+    height: 100%;
+    flex-direction: row;
+  }
+  section .container article,
+  section .container aside {
+    width: 48%;
+    height: 100%;
+    padding: 0 1rem;
+  }
+  section .container article {
+    align-items: start;
+  }
+  section .container article h1 {
+    font-size: 5rem;
+    letter-spacing: -6px;
+    line-height: 4.5rem;
+    margin: 2rem 0;
+  }
+  section .container article .btn-container {
+    margin-top: 4rem;
+    gap: 2rem;
+  }
+  section .container article .graphic img:nth-child(1) {
+    top: 2rem;
+    left: -1rem;
+  }
+  section .container article .graphic img:nth-child(2) {
+    bottom: 2rem;
+    right: 5rem;
+  }
+  section .container article .graphic img:nth-child(3) {
+    bottom: 4rem;
+    left: 50%;
+  }
+  section .container article .graphic img:nth-child(4) {
+    bottom: 11.2rem;
+    left: 1rem;
+  }
+  section .container article .graphic img:nth-child(5) {
+    top: 5rem;
+    right: 50%;
+  }
+  #hero {
+    padding: 0 4rem;
+    text-align: left;
+  }
+  #hero aside {
+    align-items: end;
+  }
+  #hero aside img:nth-child(2) {
+    top: 50%;
+  }
+  #about {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #about .container {
+    gap: 0;
+    flex-direction: row-reverse;
+    margin-top: 0;
+  }
+  #about .container aside img {
+    max-height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  #about .container article {
+    text-align: left;
+    align-items: start;
+  }
+  #about .graphic img {
+    width: -moz-fit-content;
+    width: fit-content;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  #why-choose-us {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #why-choose-us .card-container {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0;
+  }
+  #vision {
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  #vision .container {
+    flex-direction: row;
+  }
+  #vision .container article button {
+    margin-top: 0;
+  }
+  #vision .syllabus {
+    width: 100%;
+    height: -moz-fit-content;
+    height: fit-content;
+    justify-content: space-between;
+    padding: 0 1rem;
+    overflow-y: hidden;
+    background: transparent;
+  }
+  #vision .syllabus button {
+    padding: 0.8rem 2.5rem;
+  }
+  #review .review-container .swiper {
+    width: 50%;
+  }
+  #review .review-container .swiper-slide {
+    justify-content: center;
+    padding: 2rem 4rem;
+  }
+  #review .form-container {
+    width: 50%;
+    height: 400px;
+  }
+  #review .form-container form {
+    width: 80%;
+  }
+  #review .form-container form div {
+    flex-direction: row;
+  }
+  #contact {
+    width: 80%;
+    height: 70%;
+  }
+  #contact .container aside {
+    display: flex;
+  }
+  #contact .container article {
+    width: 49%;
+  }
+  #contact .container article form {
+    width: 100%;
+  }
+  footer {
+    flex-direction: row;
+    align-items: start;
+    padding: 4rem;
+  }
+  footer .des {
+    width: 30%;
+  }
+  footer .des ul {
+    justify-content: start;
+  }
+  footer .des p {
+    font-size: 1.2rem;
+  }
+  footer .quick-links {
+    width: 15%;
+    align-items: start;
+  }
+  footer .quick-links ol a {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,33 @@
+@mixin button {
+    button {
+        width: fit-content;
+        position: relative;
+        padding: 0.5rem 1.5rem;
+        font-size: 1.1rem;
+        font-weight: 600;
+        border: none;
+        background: $primary;
+        color: white;
+        white-space: nowrap;
+        border-radius: 50px;
+        overflow: hidden;
+        z-index: 2;
+        cursor: pointer;
+    }
+    button::after {
+        position: absolute;
+        content: "";
+        width: 350px;
+        height: 350px;
+        border-radius: 50%;
+        background: linear-gradient(to left, #ff9ce5, #9d92ff);
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: .3s all ease;
+    }
+    button:hover::after {
+        top: -50%;
+        z-index: -1;
+    }
+}
