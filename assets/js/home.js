@@ -1,11 +1,5 @@
 document.addEventListener("DOMContentLoaded", async function () {
 
-    // ✅ Navbar Toggle
-    document.querySelector(".bars").addEventListener("click", function () {
-        this.classList.toggle("active");
-        document.querySelector("nav ul").classList.toggle("show");
-    });
-
     // ✅ Video Play Functionality
     const video = document.querySelector(".welcome-video");
     const overlay = document.querySelector(".welcome-overlay");
@@ -67,6 +61,11 @@ document.addEventListener("DOMContentLoaded", async function () {
         console.error("Swiper container not found: .mySwiper");
     }
     }
+
+    const galleryButton = document.querySelector(".gallery-btn");
+    galleryButton.addEventListener("click", ()=> {
+        document.location.href = "gallery.html"
+    })
 
     // ✅ Fetch and Display Reviews
     const reviewContainer = document.querySelector("#reviewContainer");
