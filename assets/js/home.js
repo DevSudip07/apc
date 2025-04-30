@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", async function () {
         if (file) {
             image = await convertToBase64(file);
         } else {
-            image = "https://static.vecteezy.com/system/resources/previews/019/879/186/non_2x/user-icon-on-transparent-background-free-png.png"; // Default Image
+            image = "https://publicdomainvectors.org/tn_img/abstract-user-flat-3.webp"; // Default Image
         }
 
         // console.log("Uploaded Image URL:", image); // ✅ Console-এ আপলোড করা ইমেজ চেক করো
